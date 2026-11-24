@@ -10,61 +10,11 @@ import {
 } from "lucide-react";
 
 export const useCases = [
-  {
-    slug: "ecommerce-stores",
-    title: "E-commerce Stores",
-    description: "Guide to products, increase sales",
-    image: "/images/usecases/ecommerce.jpg",
-    demo: {
-      headline: "Turn visitors into buyers with voice",
-      text: "Demo content here. Apni pore eta change korben.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
-    },
-  },
-  {
-    slug: "service-businesses",
-    title: "Service Businesses",
-    description: "Answer questions, book appointments",
-    image: "/images/usecases/service.jpg",
-    demo: {
-      headline: "Never miss a customer call",
-      text: "Demo content here. Apni pore eta change korben.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
-    },
-  },
-  {
-    slug: "healthcare-clinics",
-    title: "Healthcare & Clinics",
-    description: "Schedule appointments, provide info",
-    image: "/images/usecases/healthcare.jpg",
-    demo: {
-      headline: "Smarter patient communication",
-      text: "Demo content here. Apni pore eta change korben.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
-    },
-  },
-  {
-    slug: "real-estate",
-    title: "Real Estate",
-    description: "Share listings and property details",
-    image: "/images/usecases/realestate.jpg",
-    demo: {
-      headline: "Showcase listings by voice",
-      text: "Demo content here. Apni pore eta change korben.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
-    },
-  },
-  {
-    slug: "education",
-    title: "Education",
-    description: "Answer inquiries, guide students",
-    image: "/images/usecases/education.jpg",
-    demo: {
-      headline: "Guide students 24/7",
-      text: "Demo content here. Apni pore eta change korben.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
-    },
-  },
+  ["E-commerce Stores", "Guide to products, increase sales"],
+  ["Service Businesses", "Answer questions, book appointments"],
+  ["Healthcare & Clinics", "Schedule appointments, provide info"],
+  ["Real Estate", "Share listings and property details"],
+  ["Education", "Answer inquiries, guide students"],
 ];
 
 export const features = [

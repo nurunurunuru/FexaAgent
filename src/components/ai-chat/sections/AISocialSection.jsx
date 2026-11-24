@@ -127,10 +127,10 @@ export default function AISocialSection() {
             <i />
           </div>
 
-          <h2 className="social-title">
-            <span>One AI agent.</span>
-            <strong>Every conversation.</strong>
-          </h2>
+          <h2 className="fexa-title">
+<span>One AI agent.</span>
+<strong>Every conversation.</strong>
+</h2>
 
           <p className="social-description">
             Connect your customer conversations across

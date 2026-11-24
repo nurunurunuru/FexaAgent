@@ -17,7 +17,10 @@ const OmniChannel = () => {
           <Globe2 size={26} />
         </div>
 
-        <h2>One AI. Every Channel.</h2>
+        <h2 className="fexa-title fexa-title-sm">
+<span>One AI.</span>
+<strong>Every Channel.</strong>
+</h2>
 
         <p>
           Connect your AI voice agent with your website,
@@ -34,7 +37,10 @@ const OmniChannel = () => {
       </div>
 
       <div className="lead-management">
-        <h2>Capture Every Lead</h2>
+        <h2 className="fexa-title fexa-title-sm">
+<span>Capture</span>
+<strong>Every Lead</strong>
+</h2>
 
         <p>
           Automatically collect customer information

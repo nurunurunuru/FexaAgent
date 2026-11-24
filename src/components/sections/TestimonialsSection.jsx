@@ -138,10 +138,10 @@ function TestimonialsSection() {
         </Reveal>
 
         <Reveal delay={100}>
-          <h2 className="testimonial-main-title">
-            What our clients say
-            <span> about Fexa Agent.</span>
-          </h2>
+          <h2 className="fexa-title fexa-title-center">
+<span>What our clients say</span>
+<strong>about Fexa Agent.</strong>
+</h2>
         </Reveal>
 
         <Reveal delay={150}>

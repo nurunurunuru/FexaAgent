@@ -128,10 +128,10 @@ function ActionSection() {
         </Reveal>
 
         <Reveal delay={100}>
-          <h2 className="action-title mt-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
-            See Fexa Agent{" "}
-            <span className="action-gradient-text">in Action</span>
-          </h2>
+          <h2 className="fexa-title fexa-title-center">
+<span>See Fexa Agent</span>
+<strong>in Action</strong>
+</h2>
         </Reveal>
 
         <Reveal delay={150}>
@@ -279,10 +279,10 @@ function ActionSection() {
                   </span>
                 </Eyebrow>
 
-                <h3 className="mt-4 text-2xl font-bold text-slate-900 sm:text-3xl">
-                  See All 3 Agents{" "}
-                  <span className="action-gradient-text">Together</span>
-                </h3>
+                <h3 className="fexa-title fexa-title-md">
+<span>See All 3 Agents</span>
+<strong>Together</strong>
+</h3>
 
                 <p className="mt-4 max-w-lg text-sm leading-7 text-slate-400">
                   Watch how Fexa Agent&apos;s AI Chat, Recruitment and Voice

@@ -23,9 +23,10 @@ const Infrastructure = () => {
           INFRASTRUCTURE
         </span>
 
-        <h2>
-          Built With Powerful AI Infrastructure.
-        </h2>
+        <h2 className="fexa-title fexa-title-center">
+<span>Built With Powerful</span>
+<strong>AI Infrastructure.</strong>
+</h2>
       </div>
 
       <div className="api-cards">

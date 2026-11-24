@@ -3501,3 +3501,101 @@ section::after {
 .premium-button > * {
   color: #ffffff !important;
 }
+
+
+/* =========================================================
+   FEXA TITLE  -  light line + bold animated gradient line
+   (same look as the Messenger AI section heading)
+   ========================================================= */
+
+.fexa-title {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin: 24px 0 20px;
+
+  font-size: clamp(34px, 4.6vw, 60px) !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.05em !important;
+  text-align: left;
+}
+
+.fexa-title-center {
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fexa-title-lg { font-size: clamp(40px, 4vw, 58px) !important; }
+.fexa-title-lg.fexa-title-center { font-size: clamp(42px, 6.2vw, 78px) !important; }
+
+/* left-aligned titles live in narrower columns */
+.fexa-title:not(.fexa-title-center):not(.fexa-title-lg):not(.fexa-title-md):not(.fexa-title-sm):not(.platform-title) {
+  font-size: clamp(32px, 3.6vw, 52px) !important;
+}
+
+.fexa-title > span,
+.fexa-title strong { text-wrap: balance; }
+.fexa-title-md { font-size: clamp(26px, 3vw, 40px) !important; margin: 14px 0 0; }
+.fexa-title-sm { font-size: clamp(24px, 2.4vw, 32px) !important; margin: 0 0 12px; }
+
+.fexa-title > span {
+  display: block;
+  color: #0f172a !important;
+  -webkit-text-fill-color: #0f172a !important;
+  font-weight: 400 !important;
+  background: none !important;
+  text-shadow: none !important;
+}
+
+.fexa-title strong {
+  position: relative;
+  display: block;
+  font-weight: 700 !important;
+
+  /* room for descenders (y, g, p) so background-clip never cuts them */
+  padding-bottom: 0.16em;
+  margin-bottom: -0.16em;
+
+  background: linear-gradient(
+    100deg,
+    #1e293b 0%,
+    #06845d 30%,
+    #0c7e54 65%,
+    #068461 100%
+  ) !important;
+  background-size: 200% auto !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+
+  animation: fexaTitleFlow 5s linear infinite;
+}
+
+.fexa-title .typewriter-cursor {
+  -webkit-text-fill-color: #06845d;
+  color: #06845d;
+}
+
+@keyframes fexaTitleFlow {
+  to { background-position: 200% center; }
+}
+
+.voice-section-subtitle {
+  max-width: 680px;
+  text-align: center !important;
+  margin: 4px auto 0 !important;
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* descender fix for the original platform titles as well */
+.platform-title strong {
+  padding-bottom: 0.16em;
+  margin-bottom: -0.16em;
+}

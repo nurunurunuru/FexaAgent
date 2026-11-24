@@ -81,17 +81,10 @@ export default function AIFinalCTA() {
               TITLE
           ================================================= */}
 
-          <h2 className="final-title mb-2">
-
-            <span className="final-title-line">
-              Let AI handle the.
-            </span>
-
-            <strong>
-              conversations.
-            </strong>
-
-          </h2>
+          <h2 className="fexa-title fexa-title-center">
+<span>Let AI handle the</span>
+<strong>conversations.</strong>
+</h2>
 
           <p className="final-description">
             Give your customers instant answers while your team

@@ -40,7 +40,7 @@ export default function AIMessengerSection() {
             <i />
           </div>
 
-          <h2 className="platform-title">
+          <h2 className="platform-title fexa-title">
             <span>Every Messenger.</span>
             <strong>Answered instantly.</strong>
           </h2>

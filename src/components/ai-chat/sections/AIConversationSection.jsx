@@ -23,10 +23,10 @@ export default function AIConversationSection() {
             AI-powered conversations
           </div>
 
-          <h2>
-            Every message gets an
-            <span> intelligent response.</span>
-          </h2>
+          <h2 className="fexa-title">
+<span>Every message gets an</span>
+<strong>intelligent response.</strong>
+</h2>
 
           <p>
             Fexa understands customer intent, keeps the

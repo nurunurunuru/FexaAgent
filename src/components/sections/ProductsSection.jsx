@@ -1150,12 +1150,10 @@ function ProductsSection() {
         </Reveal>
 
         <Reveal delay={100}>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-            AI agents that work{" "}
-            <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
-              for you.
-            </span>
-          </h2>
+          <h2 className="fexa-title fexa-title-center">
+<span>AI agents that work</span>
+<strong>for you.</strong>
+</h2>
         </Reveal>
 
         <Reveal delay={150}>

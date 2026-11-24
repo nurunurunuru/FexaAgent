@@ -43,7 +43,7 @@ export default function AIWhatsAppSection() {
 
           </div>
 
-          <h2 className="platform-title">
+          <h2 className="platform-title fexa-title">
 
             <span>WhatsApp support.</span>
 

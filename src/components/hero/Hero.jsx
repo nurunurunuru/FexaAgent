@@ -21,13 +21,10 @@ function Hero() {
           <Eyebrow>AI Agents for Business</Eyebrow>
         </Reveal>
         <Reveal delay={100}>
-          <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-6xl">
-            Automate today.
-            <br />
-           <span className="text-emerald-400">
-  Grow <TypewriterText text="tomorrow." speed={160} />
-</span>
-          </h1>
+          <h1 className="fexa-title fexa-title-center fexa-title-lg">
+<span>Automate today.</span>
+<strong>Grow <TypewriterText text="tomorrow." speed={160} /></strong>
+</h1>
         </Reveal>
         <Reveal delay={200}>
           <p className="mx-auto mt-6 max-w-xl text-base text-slate-400 sm:text-lg">

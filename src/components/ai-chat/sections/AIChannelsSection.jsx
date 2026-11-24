@@ -116,10 +116,10 @@ export default function AIChannelsSection() {
             <i />
           </div>
 
-          <h2 className="channels-title">
-            <span>One AI agent.</span>
-            <strong>Every channel covered.</strong>
-          </h2>
+          <h2 className="fexa-title">
+<span>One AI agent.</span>
+<strong>Every channel covered.</strong>
+</h2>
 
           <p className="channels-description">
             Fexa AI Chat connects to every channel your customers

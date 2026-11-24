@@ -22,7 +22,10 @@ function FaqSection() {
       <div className="mx-auto max-w-3xl px-6">
         <Reveal className="text-center">
           <Eyebrow>FAQ</Eyebrow>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Frequently asked questions</h2>
+          <h2 className="fexa-title fexa-title-center">
+<span>Frequently asked</span>
+<strong>questions</strong>
+</h2>
           <p className="mt-3 text-slate-400">Everything you need to know about Fexa Agent.</p>
         </Reveal>
 

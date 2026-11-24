@@ -21,10 +21,11 @@ const VoiceFeatures = () => {
 
   return (
     <section className="voice-features">
-      <VoiceSectionTitle eyebrow="">
-        Everything Your AI Voice Agent Needs
-      <h1>From natural conversations to intelligent customer engagement, everything your business needs to deliver exceptional voice experiences. </h1>
-      </VoiceSectionTitle>
+      <VoiceSectionTitle
+        light="Everything Your AI"
+        bold="Voice Agent Needs"
+        subtitle="From natural conversations to intelligent customer engagement, everything your business needs to deliver exceptional voice experiences."
+      />
       <div className="voice-features-grid">
         {items.map(([Icon, title]) => (
           <div className="voice-feature-item" key={title}>

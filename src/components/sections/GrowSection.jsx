@@ -249,14 +249,10 @@ function GrowSection() {
               <span>ONE POWERFUL PLATFORM</span>
             </div>
 
-            <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              Everything your business needs
-              <span className="block">
-                <span className="integration-gradient-text">
-                  in one platform.
-                </span>
-              </span>
-            </h2>
+            <h2 className="fexa-title fexa-title-center">
+<span>Everything your business needs</span>
+<strong>in one platform.</strong>
+</h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
               Connect conversations, customers, automation and your

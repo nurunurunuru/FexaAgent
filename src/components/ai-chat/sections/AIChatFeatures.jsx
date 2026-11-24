@@ -40,15 +40,10 @@ export default function AIChatFeatures() {
             <i />
           </div>
 
-          <h2>
-            <span className="feature-heading-line">
-              Every message becomes
-            </span>
-
-            <span className="feature-heading-highlight">
-              an opportunity.
-            </span>
-          </h2>
+          <h2 className="fexa-title fexa-title-center">
+<span>Every message becomes</span>
+<strong>an opportunity.</strong>
+</h2>
 
           <p>
             Fexa AI understands what your customers need and

@@ -212,7 +212,7 @@ export default function AIInstagramSection() {
 
           </div>
 
-          <h2 className="platform-title">
+          <h2 className="platform-title fexa-title">
 
             <span>Your Instagram.</span>
 

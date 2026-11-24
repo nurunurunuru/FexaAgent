@@ -19,9 +19,10 @@ function FinalCta() {
         <Reveal>
           <div className="rounded-3xl border border-emerald-500/25 bg-gradient-to-br from-emerald-50 to-white px-6 py-12 sm:px-14">
             <Eyebrow>Ready to grow?</Eyebrow>
-            <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Let AI handle the repetitive work.
-            </h2>
+            <h2 className="fexa-title fexa-title-center">
+<span>Let AI handle the</span>
+<strong>repetitive work.</strong>
+</h2>
             <p className="mx-auto mt-4 max-w-md text-sm text-slate-400">
               Save time, reduce costs and scale your business with Fexa Agent. Get started today and
               see the difference.

@@ -58,21 +58,11 @@ export default function AIChatHero() {
           </div>
 
           {/* HEADING */}
-          <h1 className="ai-hero-title">
-
-            <span className="hero-line hero-line-one">
-              Your AI agent is
-            </span>
-
-            <span className="hero-line hero-line-two">
-              always ready to
-            </span>
-
-            <span className="hero-line hero-line-three">
-              <strong>chat.</strong>
-            </span>
-
-          </h1>
+          <h1 className="ai-hero-title fexa-title fexa-title-lg">
+<span className="hero-line hero-line-one">Your AI agent is</span>
+<span className="hero-line hero-line-two">always ready to</span>
+<span className="hero-line hero-line-three"><strong>chat.</strong></span>
+</h1>
 
           {/* DESCRIPTION */}
           <p className="ai-hero-description ai-hero-reveal reveal-three">

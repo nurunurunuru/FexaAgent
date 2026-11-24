@@ -131,9 +131,10 @@ function IntegrationsSection() {
             INTEGRATIONS
           </div>
 
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-            Connect your favorite tools
-          </h2>
+          <h2 className="fexa-title fexa-title-center">
+<span>Connect your</span>
+<strong>favorite tools</strong>
+</h2>
         </Reveal>
 
         <Reveal delay={100}>

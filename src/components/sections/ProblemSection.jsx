@@ -106,12 +106,10 @@ function ProblemSection() {
         </Reveal>
 
         <Reveal delay={100}>
-          <h2 className="problem-title mt-5 max-w-2xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Your team is buried in{" "}
-            <span className="problem-title-gradient">
-              repetitive work.
-            </span>
-          </h2>
+          <h2 className="fexa-title fexa-title-center">
+<span>Your team is buried in</span>
+<strong>repetitive work.</strong>
+</h2>
         </Reveal>
 
         <Reveal delay={150}>

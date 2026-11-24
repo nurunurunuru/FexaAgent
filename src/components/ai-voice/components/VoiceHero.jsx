@@ -6,17 +6,21 @@ const VoiceHero = () => {
   return (
     <section className="voice-hero">
       <div className="voice-hero-content">
-        <div className="voice-hero-badge">AI POWERED</div>
+        <div className="voice-hero-badge">
+          AI POWERED
+        </div>
 
-        <h1>Your Website, Now Powered by AI Voice</h1>
+        <h1 className="fexa-title fexa-title-lg">
+<span>Your Website, Now</span>
+<strong>Powered by AI Voice</strong>
+</h1>
 
-        <h2>Turn Every Website Visit Into a Real Conversation.</h2>
+        <h2>
+          Turn Every Website Visit Into a Real Conversation. 
+        </h2>
 
         <p>
-          Give your customers an intelligent voice experience that feels natural
-          and effortless. Answer questions instantly, discover products, navigate
-          website pages, book appointments, and capture valuable leads — all
-          through human-like AI conversations, 24/7 in 100+ languages.
+          Give your customers an intelligent voice experience that feels natural and effortless. Answer questions instantly, discover products, navigate website pages, book appointments, and capture valuable leads — all through human-like AI conversations, 24/7 in 100+ languages. 
         </p>
 
         <div className="voice-hero-actions">
@@ -25,7 +29,9 @@ const VoiceHero = () => {
             <ArrowRight size={18} />
           </button>
 
-          <button className="voice-secondary-btn">Try Demo</button>
+          <button className="voice-secondary-btn">
+            Try Demo
+          </button>
         </div>
 
         <div className="voice-hero-checks">

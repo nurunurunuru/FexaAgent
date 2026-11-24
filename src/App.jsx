@@ -16,21 +16,12 @@ import Never from "./components/sections/never";
 import AIChatPage from "./components/pages/AIChatPage";
 import AIVoicePage from "./components/ai-voice/AIVoicePage";
 
-// ADDED 1: use case detail page import
-import UseCaseDetail from "./components/ai-voice/components/UseCaseDetail";
-
 export default function App() {
-  const path = window.location.pathname;
-
-  const isAIChatPage = path === "/ai-chat";
-  const isAIVoicePage = path === "/ai-voice";
-
-  // ADDED 2: /ai-voice/use-cases/some-slug  ->  slug ber kore
-  const useCaseMatch = path.match(/^\/ai-voice\/use-cases\/([^/]+)\/?$/);
-  const useCaseSlug = useCaseMatch ? useCaseMatch[1] : null;
+  const isAIChatPage = window.location.pathname === "/ai-chat";
+  const isAIVoicePage = window.location.pathname === "/ai-voice";
 
   return (
-    <div className="min-h-screen bg-slate-950 font-sans text-white antialiased">
+    <div className="min-h-screen bg-slate-950 font-sans text-slate-900 antialiased">
       <style>{`
         @keyframes floaty {
           0%, 100% {
@@ -110,41 +101,38 @@ export default function App() {
 
       <Navbar />
 
-      {/* ADDED 3: use case detail page sobar age check hobe */}
-      {useCaseSlug ? (
-        <UseCaseDetail slug={useCaseSlug} />
-      ) : isAIVoicePage ? (
-        <AIVoicePage />
-      ) : isAIChatPage ? (
-        <>
-          <AIChatPage />
+    {isAIVoicePage ? (
+  <AIVoicePage />
+) : isAIChatPage ? (
+  <>
+    <AIChatPage />
 
-          <TestimonialsSection />
+    <TestimonialsSection />
 
-          <FaqSection />
+    <FaqSection />
 
-          <FinalCta />
+    <FinalCta />
 
-          <Never />
+    <Never/>
 
-          <Footer />
-        </>
-      ) : (
-        <>
-          <Hero />
-          <LogoStrip />
-          <GlobeSection />
-          <ActionSection />
-          <ProblemSection />
-          <ProductsSection />
-          <GrowSection />
-          <IntegrationsSection />
-          <TestimonialsSection />
-          <FaqSection />
-          <FinalCta />
-          <Footer />
-        </>
-      )}
+    <Footer />
+  </>
+) : (
+  <>
+    <Hero />
+    <LogoStrip />
+    <GlobeSection />
+    <ActionSection />
+    <ProblemSection />
+    <ProductsSection />
+    <GrowSection />
+    <IntegrationsSection />
+    <TestimonialsSection />
+    <FaqSection />
+    <FinalCta />
+    <Footer />
+  </>
+)}
     </div>
   );
 }
