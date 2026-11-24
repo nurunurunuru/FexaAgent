@@ -10,11 +10,61 @@ import {
 } from "lucide-react";
 
 export const useCases = [
-  ["E-commerce Stores", "Guide to products, increase sales"],
-  ["Service Businesses", "Answer questions, book appointments"],
-  ["Healthcare & Clinics", "Schedule appointments, provide info"],
-  ["Real Estate", "Share listings and property details"],
-  ["Education", "Answer inquiries, guide students"],
+  {
+    slug: "ecommerce-stores",
+    title: " E-commerce & Retail",
+    description: "Guide to products, increase sales",
+    image: "/images/usecases/ecommerce.png",
+    demo: {
+      headline: "Turn product inquiries into purchases with AI-powered product discovery, recommendations, and instant customer support. ",
+      text: "Demo content here.",
+      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+    },
+  },
+  {
+    slug: "service-businesses",
+    title: "Service Businesses",
+    description: "Answer questions, book appointments",
+    image: "/images/usecases/service.png",
+    demo: {
+      headline: "Never miss a customer call",
+      text: "Demo content here. Apni pore eta change korben.",
+      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+    },
+  },
+  {
+    slug: "healthcare-clinics",
+    title: "Healthcare & Clinics",
+    description: "Schedule appointments, provide info",
+    image: "/images/usecases/service.png",
+    demo: {
+      headline: "Smarter patient communication",
+      text: "Demo content here. Apni pore eta change korben.",
+      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+    },
+  },
+  {
+    slug: "real-estate",
+    title: "Real Estate",
+    description: "Share listings and property details",
+    image: "/images/usecases/healthcare.png",
+    demo: {
+      headline: "Showcase listings by voice",
+      text: "Demo content here. Apni pore eta change korben.",
+      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+    },
+  },
+  {
+    slug: "education",
+    title: "Education",
+    description: "Answer inquiries, guide students",
+    image: "/images/usecases/education.png",
+    demo: {
+      headline: "Guide students 24/7",
+      text: "Demo content here. Apni pore eta change korben.",
+      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+    },
+  },
 ];
 
 export const features = [

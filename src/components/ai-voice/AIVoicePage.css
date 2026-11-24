@@ -454,3 +454,217 @@
 @media (prefers-reduced-motion: reduce) {
   .ai-voice-page *, .ai-voice-page section { animation: none !important; transition: none !important; }
 }
+
+
+
+/* ---------- HERO TEXT ALIGNMENT POLISH ---------- */
+.voice-hero {
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.voice-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.voice-hero-badge {
+  margin-bottom: 4px;
+}
+
+.voice-hero h1 {
+  margin-top: 20px;
+  max-width: 640px;
+  font-size: clamp(2.2rem, 4.6vw, 3.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.voice-hero h2 {
+  margin-top: 16px;
+  max-width: 600px;
+  font-size: clamp(1.15rem, 2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.voice-hero-content > p {
+  max-width: 540px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.voice-hero-actions {
+  margin-top: 30px;
+  align-items: center;
+}
+
+.voice-hero-actions button {
+  justify-content: center;
+  min-height: 50px;
+}
+
+.voice-hero-checks {
+  margin-top: 26px;
+  gap: 14px 24px;
+}
+
+.voice-hero-checks span {
+  line-height: 1;
+}
+
+.voice-hero-widget {
+  justify-content: center;
+  align-items: center;
+}
+
+/* tablet / mobile: center everything */
+@media (max-width: 860px) {
+  .voice-hero {
+    gap: 44px;
+  }
+
+  .voice-hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .voice-hero-actions,
+  .voice-hero-checks {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .voice-hero-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .voice-hero-actions button {
+    width: 100%;
+  }
+}
+
+
+
+
+/* ---------- USE CASE CARDS WITH IMAGE ---------- */
+a.usecase-card {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  cursor: pointer;
+}
+
+.usecase-image {
+  height: 190px;
+  background-color: rgba(33, 243, 166, 0.08); /* fallback jodi image na thake */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+a.usecase-card:hover .usecase-image {
+  transform: scale(1.08);
+}
+
+/* image er nicher dike dark fade, jate text porha jay */
+a.usecase-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(2, 9, 7, 0.92) 100%);
+  pointer-events: none;
+}
+
+.usecase-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 18px 20px;
+}
+
+.usecase-body h3 { font-size: 16px; font-weight: 700; color: #fff; }
+.usecase-body p { margin-top: 6px; font-size: 12px; line-height: 1.5; color: #d3e4df; }
+
+a.usecase-card { height: 260px; }
+a.usecase-card .usecase-image { height: 100%; }
+
+/* ---------- USE CASE DETAIL PAGE ---------- */
+.usecase-detail { padding-top: 140px !important; }
+
+.usecase-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+  color: var(--green2);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.usecase-detail-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.usecase-detail-image {
+  height: 420px;
+  border: 1px solid var(--border-hi);
+  border-radius: 24px;
+  background-color: rgba(33, 243, 166, 0.08);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 60px rgba(33, 243, 166, 0.12);
+}
+
+.usecase-detail-content h1 {
+  margin-top: 18px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.usecase-detail-sub { margin-top: 8px; color: var(--green2); font-size: 16px; }
+.usecase-detail-content h2 { margin-top: 28px; font-size: 22px; font-weight: 700; }
+.usecase-detail-content > p { margin-top: 10px; color: var(--soft); line-height: 1.75; }
+
+.usecase-detail-points {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.usecase-detail-points li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--soft);
+  font-size: 15px;
+}
+
+.usecase-detail-points svg { color: var(--green); flex-shrink: 0; }
+
+@media (max-width: 860px) {
+  .usecase-detail-hero { grid-template-columns: 1fr; }
+  .usecase-detail-image { height: 280px; }
+}
