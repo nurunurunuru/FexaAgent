@@ -16,9 +16,10 @@ export const useCases = [
     description: "Guide to products, increase sales",
     image: "/images/usecases/ecommerce.png",
     demo: {
-      headline: "Turn product inquiries into purchases with AI-powered product discovery, recommendations, and instant customer support. ",
-      text: "Demo content here.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+      headline: "Grow Your business with your personal Agent ",
+      text: "Turn product inquiries into purchases with AI-powered product discovery, recommendations, and instant customer support.",
+      // points: [""],
+      video: { src: "/videos/ecommerce.mp4", poster: "/images/usecases/ecommerce.png" },
     },
   },
   {
@@ -28,8 +29,8 @@ export const useCases = [
     image: "/images/usecases/service.png",
     demo: {
       headline: "Never miss a customer call",
-      text: "Demo content here. Apni pore eta change korben.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+      text: "Automate customer inquiries, schedule appointments, and capture qualified leads around the clock.",
+      // points: ["Demo point 1", "Demo point 2", "Demo point 3"],
     },
   },
   {
@@ -39,8 +40,8 @@ export const useCases = [
     image: "/images/usecases/service.png",
     demo: {
       headline: "Smarter patient communication",
-      text: "Demo content here. Apni pore eta change korben.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+      text: "Help patients access clinic information, understand available services, and request appointments",
+      // points: ["Demo point 1", "Demo point 2", "Demo point 3"],
     },
   },
   {
@@ -50,8 +51,8 @@ export const useCases = [
     image: "/images/usecases/healthcare.png",
     demo: {
       headline: "Showcase listings by voice",
-      text: "Demo content here. Apni pore eta change korben.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+      text: "Connect property seekers with relevant listings, property information, and viewing appointments.",
+      // points: ["Demo point 1", "Demo point 2", "Demo point 3"],
     },
   },
   {
@@ -61,8 +62,8 @@ export const useCases = [
     image: "/images/usecases/education.png",
     demo: {
       headline: "Guide students 24/7",
-      text: "Demo content here. Apni pore eta change korben.",
-      points: ["Demo point 1", "Demo point 2", "Demo point 3"],
+      text: "Answer student inquiries, share course information, and guide prospective students through enrollment.",
+      // points: ["Demo point 1", "Demo point 2", "Demo point 3"],
     },
   },
 ];

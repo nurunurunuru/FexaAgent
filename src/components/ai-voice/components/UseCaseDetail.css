@@ -1,0 +1,115 @@
+/* Use case detail page — white / emerald theme
+   Uses variables from .ai-voice-page (--card, --border, --border-hi, --green2, --soft, --muted, --text).
+   Prefixed with .ai-voice-page so it beats `.ai-voice-page section` and `.ai-voice-page h1` resets. */
+
+/* ---------- HERO ---------- */
+.ai-voice-page .ucd-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+  padding: 150px 0 50px;
+}
+.ai-voice-page .ucd-hero-text { display: flex; flex-direction: column; align-items: flex-start; }
+.ai-voice-page .ucd-back {
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 24px;
+  color: var(--green2); font-size: 14px; font-weight: 600; text-decoration: none;
+}
+.ai-voice-page .ucd-back:hover { text-decoration: underline; }
+.ai-voice-page .ucd-hero .fexa-title { margin: 22px 0 0; }
+.ai-voice-page .ucd-sub { max-width: 520px; margin-top: 18px; color: var(--soft); font-size: 17px; line-height: 1.75; }
+.ai-voice-page .ucd-hero .voice-hero-actions a { text-decoration: none; }
+.ai-voice-page .ucd-notfound { display: block; text-align: center; }
+
+/* Video card */
+.ai-voice-page .ucd-video {
+  position: relative; aspect-ratio: 16 / 10; overflow: hidden;
+  border: 1px solid var(--border-hi); border-radius: 24px;
+  background-color: rgba(11, 203, 133, 0.08); background-size: cover; background-position: center;
+  box-shadow: 0 0 60px rgba(5, 150, 105, 0.054), 0 30px 80px rgba(15, 23, 42, 0.135);
+}
+.ai-voice-page .ucd-video::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(15, 23, 42, 0.32));
+}
+.ai-voice-page .ucd-play {
+  position: absolute; z-index: 2; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  display: grid; place-items: center; width: 80px; height: 80px; border: 0; border-radius: 50%;
+  color: var(--green2); background: #fff; cursor: pointer;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.35), 0 15px 40px rgba(15, 23, 42, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ai-voice-page .ucd-play:hover {
+  transform: translate(-50%, -50%) scale(1.07);
+  box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.35), 0 0 40px rgba(5, 150, 105, 0.25), 0 15px 40px rgba(15, 23, 42, 0.25);
+}
+
+/* ---------- WORKS HEADING ---------- */
+.ai-voice-page .ucd-works { text-align: center; padding: 70px 0 40px; }
+.ai-voice-page .ucd-works .fexa-title { margin: 0 auto 6px; }
+.ai-voice-page .ucd-works .eyebrow-light { margin-top: 28px; }
+
+/* ---------- DEMO PANEL ---------- */
+.ai-voice-page .ucd-demo-wrap { padding-top: 20px; }
+.ai-voice-page .ucd-demo {
+  display: grid; grid-template-columns: 1fr 300px 1fr; gap: 40px;
+  max-width: 1000px; margin: 0 auto; padding: 36px;
+  border: 1px solid var(--border); border-radius: 24px;
+  background: radial-gradient(ellipse at 50% 100%, rgba(11, 203, 133, 0.08), transparent 65%), var(--card);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.32), 0 18px 50px rgba(15, 23, 42, 0.06);
+}
+.ai-voice-page .ucd-demo small { display: block; margin-bottom: 4px; color: var(--muted); font-size: 12px; }
+.ai-voice-page .ucd-demo b { font-size: 14px; font-weight: 600; color: var(--text); }
+.ai-voice-page .ucd-demo hr { margin: 20px 0; border: 0; border-top: 1px solid rgba(15, 23, 42, 0.073); }
+.ai-voice-page .ucd-demo h4 { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 15px; font-weight: 700; }
+.ai-voice-page .ucd-demo h4 svg { color: var(--green2); }
+.ai-voice-page .ucd-demo h4 em {
+  font-style: normal; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+  color: var(--green2); background: rgba(11, 203, 133, 0.1); border: 1px solid var(--border);
+}
+.ai-voice-page .ucd-demo .ucd-muted { color: var(--muted); }
+.ai-voice-page .ucd-demo .ucd-gap { margin-top: 70px; }
+.ai-voice-page .ucd-meta { display: flex; gap: 28px; }
+.ai-voice-page .ucd-field { margin-top: 14px; }
+
+/* Phone */
+.ai-voice-page .ucd-phone {
+  display: flex; flex-direction: column; align-items: center; min-height: 420px; padding: 18px;
+  border: 1px solid var(--border-hi); border-radius: 26px;
+  background: radial-gradient(circle at 50% 0%, rgba(11, 203, 133, 0.088), transparent 55%), linear-gradient(145deg, #f6f8f8, #fcfdfd);
+  box-shadow: 0 0 40px rgba(5, 150, 105, 0.045), 0 24px 60px rgba(15, 23, 42, 0.1);
+}
+.ai-voice-page .ucd-timer { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.ai-voice-page .ucd-wave { display: flex; align-items: center; gap: 4px; margin-top: 26px; height: 60px; }
+.ai-voice-page .ucd-wave span { width: 5px; border-radius: 3px; background: linear-gradient(180deg, #09dc9a, #10c985); opacity: 0.85; }
+.ai-voice-page .ucd-empty { margin: auto; display: grid; gap: 4px; text-align: center; }
+.ai-voice-page .ucd-empty b { font-size: 15px; }
+.ai-voice-page .ucd-empty span { font-size: 13px; color: var(--muted); }
+.ai-voice-page .ucd-call { display: flex; gap: 12px; width: 100%; }
+.ai-voice-page .ucd-call button {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 11px; border-radius: 999px; font-size: 13px; font-weight: 700; cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.ai-voice-page .ucd-call button:hover { transform: translateY(-2px); }
+.ai-voice-page .ucd-mute { color: var(--soft); background: rgba(15, 23, 42, 0.022); border: 1px solid var(--border-hi); }
+.ai-voice-page .ucd-end { color: #fff; background: #e5484d; border: 0; }
+
+.ai-voice-page .ucd-legal {
+  max-width: 820px; margin: 34px auto 0; text-align: center;
+  color: var(--muted); font-size: 11px; line-height: 1.7;
+}
+
+.ai-voice-page .voice-features { padding-top: 10px; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 960px) {
+  .ai-voice-page .ucd-hero { grid-template-columns: 1fr; gap: 40px; padding-top: 120px; }
+  .ai-voice-page .ucd-demo { grid-template-columns: 1fr; padding: 24px; }
+  .ai-voice-page .ucd-phone { max-width: 320px; width: 100%; margin: 0 auto; }
+  .ai-voice-page .ucd-demo .ucd-gap { margin-top: 28px; }
+}
+
+/* ---------- VIDEO ---------- */
+.ai-voice-page .ucd-video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #0f172a; }
+.ai-voice-page .ucd-video-playing::after { display: none; }
