@@ -231,7 +231,7 @@
 .voice-stats strong { display: block; font-size: 30px; font-weight: 800; color: var(--green2); }
 .voice-stats span { font-size: 13px; color: var(--muted); }
 
-.voice-usecases h1{font-size: 22px; margin-top: 6px;}
+.voice-usecases h1{font-size: 22px; margin-top: 6px; }
 
 /* ---------- TRUSTED (premium marquee) ---------- */
 .ai-voice-page .trusted-section { width: 100%; max-width: none; padding: 70px 0 80px; overflow: hidden; }

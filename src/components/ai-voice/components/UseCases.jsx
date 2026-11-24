@@ -6,8 +6,7 @@ const UseCases = () => {
   return (
     <section className="voice-usecases">
       <VoiceSectionTitle eyebrow="USE CASES">
-        Perfect for Every Business.
-        <h1>One AI Voice Agent. Every Business. Every Customer</h1>
+        One Voice AI Handle Every Business & Customer
       </VoiceSectionTitle>
 
       <div className="usecases-grid">
