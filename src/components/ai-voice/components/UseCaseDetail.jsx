@@ -3,12 +3,6 @@ import {
   ArrowLeft,
   CheckCircle2,
   Play,
-  Mic,
-  PhoneOff,
-  Sparkles,
-  Activity,
-  User,
-  Code2,
   AudioLines,
   Globe2,
   Clock3,
@@ -19,6 +13,7 @@ import {
 import { useCases } from "../data/voiceData";
 import "../AIVoicePage.css";
 import "./UseCaseDetail.css";
+import VoiceDemo2 from "./VoiceDemo2";
 
 const strip = [
   [AudioLines, "Natural Human-like Voice"],
@@ -28,8 +23,6 @@ const strip = [
   [MessageSquareHeart, "Social Media Connection"],
   [Users, "Capture Leads in Dashboard"],
 ];
-
-const wave = [14, 22, 34, 44, 52, 58, 52, 44, 34, 22, 14];
 
 const UseCaseVideo = ({ src, poster, title }) => {
   const ref = useRef(null);
@@ -91,7 +84,6 @@ const UseCaseDetail = ({ slug }) => {
   }
 
   const { title, image, demo } = item;
-  const profile = demo.profile || [];
 
   return (
     <main className="ai-voice-page">
@@ -114,18 +106,18 @@ const UseCaseDetail = ({ slug }) => {
           <p className="ucd-sub">{demo.text}</p>
 
           <div className="voice-hero-actions">
-            <button className="voice-primary-btn">Try Live Demo</button>
+            <a href="#ucd-demo" className="voice-primary-btn">Try Live Demo</a>
             <a href="#ucd-demo" className="voice-secondary-btn">
               Explore what&rsquo;s possible
             </a>
           </div>
 
           <div className="voice-hero-checks">
-            {/* {demo.points.map((p) => (
+            {demo.points.map((p) => (
               <span key={p}>
                 <CheckCircle2 size={16} /> {p}
               </span>
-            ))} */}
+            ))}
           </div>
         </div>
 
@@ -152,71 +144,7 @@ const UseCaseDetail = ({ slug }) => {
 
       {/* 3. DEMO PANEL */}
       <section className="ucd-demo-wrap" id="ucd-demo">
-        <div className="ucd-demo">
-          <div className="ucd-col">
-            <div className="ucd-meta">
-              <div>
-                <small>Channel</small>
-                <b>{demo.channel}</b>
-              </div>
-              <div>
-                <small>Scenario</small>
-                <b>{demo.scenario}</b>
-              </div>
-            </div>
-            <hr />
-            <h4>
-              <User size={16} /> Profile
-            </h4>
-            {profile.map(({ label, value }) => (
-              <div className="ucd-field" key={label}>
-                <small>{label}</small>
-                <b>{value}</b>
-              </div>
-            ))}
-            <hr />
-            <h4 className="ucd-muted">
-              <Code2 size={16} /> Under the hood
-            </h4>
-          </div>
-
-          <div className="ucd-phone">
-            <div className="ucd-timer">
-              <Mic size={12} /> 00:00
-            </div>
-            <div className="ucd-wave" aria-hidden="true">
-              {wave.map((h, i) => (
-                <span key={i} style={{ height: h }} />
-              ))}
-            </div>
-            <div className="ucd-empty">
-              <b>Nothing yet</b>
-              <span>Turns appear here as they happen.</span>
-            </div>
-            <div className="ucd-call">
-              <button className="ucd-mute">
-                <Mic size={14} /> Mute
-              </button>
-              <button className="ucd-end">
-                <PhoneOff size={14} /> End
-              </button>
-            </div>
-          </div>
-
-          <div className="ucd-col">
-            <h4>
-              <Activity size={16} /> Real-time signals
-              <em>Analyzing</em>
-            </h4>
-            <small>Sentiment</small>
-            <h4 className="ucd-gap">
-              <Sparkles size={16} /> Summary
-            </h4>
-            <h4 className="ucd-gap">
-              <Activity size={16} /> Observations
-            </h4>
-          </div>
-        </div>
+        <VoiceDemo2 key={slug} demo={demo} slug={slug} />
 
         <p className="ucd-legal">
           By enabling your microphone, you agree to this AI-powered demo. Your
