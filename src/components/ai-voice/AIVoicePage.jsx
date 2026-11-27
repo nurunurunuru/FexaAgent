@@ -17,6 +17,7 @@ import Integrations from "./components/Integrations";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import VoiceFooter from "./components/VoiceFooter";
+import LeadPackages from "./components/LeadPackages";
 
 const AIVoicePage = () => {
   useEffect(() => {
@@ -73,6 +74,8 @@ const AIVoicePage = () => {
       <Integrations />
 
       <Testimonials />
+
+      <LeadPackages/>
 
       <FAQ />
 

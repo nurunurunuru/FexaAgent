@@ -15,6 +15,9 @@ import {
 } from "lucide-react";
 
 import PrimaryButton from "../common/PrimaryButton";
+const LOGO_SRC = "/images/logo.png";
+const LOGO_MODE = "icon";
+const LOGO_HEIGHT = 28;
 
 const NAV_LINKS = ["Solutions", "Features", "Pricing", "Learn"];
 
@@ -133,13 +136,23 @@ function Navbar() {
             onClick={closeMenus}
             className="navbar-brand"
           >
-            <span className="navbar-brand-icon">
-              <Bot size={16} strokeWidth={2.5} />
-            </span>
+            {LOGO_SRC ? (
+              <img
+                src={LOGO_SRC}
+                alt="Fexa Agents"
+                className="navbar-brand-img"
+                style={{ height: LOGO_HEIGHT }}
+                draggable="false"
+              />
+            ) : (
+              <span className="navbar-brand-icon">
+                <Bot size={16} strokeWidth={2.5} />
+              </span>
+            )}
 
-            <span className="navbar-brand-text">
-              Fexa Agents
-            </span>
+            {(!LOGO_SRC || LOGO_MODE === "full") && (
+              <span className="navbar-brand-text">Fexa Agents</span>
+            )}
           </a>
 
           {/* =================================================
